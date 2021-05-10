@@ -1,0 +1,11 @@
+{{ form_start(form) }}
+    {# {{ form_widget(form) }} #}
+        {{ form_row(form.firstName) }}
+        {{ form_row(form.lastName) }}
+        {{ form_row(form.email) }}
+        {{ form_row(form.password, {
+            label: 'Password'
+        }) }}
+        {{ form_row(form.company) }}
+    <button class="btn">{{ button_label|default('Save') }}</button>
+{{ form_end(form) }}

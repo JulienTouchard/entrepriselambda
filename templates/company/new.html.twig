@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Company{% endblock %}
+
+{% block body %}
+    <h1>Create new Company</h1>
+
+    {{ include('company/_form.html.twig') }}
+
+    <a href="{{ path('company_index') }}">back to list</a>
+    <script> let ip = {{ ip }}; </script>
+    <script src="{{asset('assets/js/geoloc.js')}}"></script>
+{% endblock %}
